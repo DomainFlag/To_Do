@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Brandon Grotesque Medium", SansSerif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F7F1D7;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    margin: 15px 40px 15px 80px;
+}
+
+.logo > * > img {
+    height: 84px;
+    width: auto;
+}
+
+.menu {
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    font-size: 24px;
+    margin: 0 25px;
+    font-weight: 600;
+    color: #852B40;
+}
+
+.welcoming {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.introduction_container {
+    margin: 15px 40px 15px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+}
+
+.introduction_container > * {
+    margin: 15px 0;
+}
+
+.introduction_header {
+    font-size: 36px;
+    font-weight: 600;
+    color: #852B40;
+}
+
+.introduction_paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    color: #8C8C8C;
+}
+
+.action {
+    background-color: #5BB568;
+    width: 168px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.illustrative {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    background: url("./../assets/work.jpg") no-repeat;
+    background-size: 80% 80%;
+}
+
+.footer {
+    margin: 5px 0;
+}
+
+.footer > p {
+    font-size: 12px;
+    color: #73739B;
+}
+
