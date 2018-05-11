@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Brandon Grotesque Medium", "Roboto", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #59152D;
+    display: flex;
+    flex-direction: column;
+}
+
+.room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Header Styling */
+.header {
+    background-color: #59152D;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toolbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    margin: 15px 40px 15px 80px;
+}
+
+.logo > * > img {
+    height: 84px;
+    width: auto;
+}
+
+.menu {
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu > img {
+    height: 48px;
+    width: auto;
+}
+
+.bookmarks {
+    padding: 20px 72px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.bookmark {
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #852B40;
+    border-radius: 6px;
+    padding: 11px 19px;
+    color: white;
+}
+
+/* Welcoming Styling */
+.studio {
+    border-radius: 36px 36px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+    background-color: #F7F1D8;
+}
+
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    background-color: #F7F1D8;
+}
+
+.footer > p {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 12px;
+    color: #73739B;
+}
+
+/* Settings Menu */
+.settings {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    padding: 40px 40px 0 40px;
+    background-color: #852B40;
+    left: 100%;
+    width: 25%;
+    height: 100%;
+}
+
+.settings > * {
+    margin: 16px 0;
+}
+
+.slide_left_in {
+    animation: slide_left_out 0.3s forwards ease-out;
+}
+
+.slide_left_out {
+    animation: slide_left_in 0.3s forwards ease-in;
+}
+
+@keyframes slide_left_out {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@keyframes slide_left_in {
+    0% {
+        transform: translate(-100%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.settings_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.settings_account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.settings_account > * {
+    margin: 12px 0;
+}
+
+.account_name {
+    display: flex;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.account_image {
+    margin: 0 15px;
+    width: 60px;
+    height: auto;
+}
+
+.account_image {
+    width: 64px;
+    height: auto;
+}
+
+.account_image:hover {
+    transform: scale(1.15);
+}
+
+.settings_back {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-200%, 100%);
+    width: 20px;
+    height: auto;
+}
+
+.settings_back:hover {
+    transform: translate(-200%, 100%) scale(1.15);
+}
+
+.settings_details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.settings_details > a > img {
+    margin-right: 8px;
+    width: 20px;
+    height: auto;
+}
+
+.settings_details > a > img:hover {
+    transform: scale(1.15);
+}
+
+.settings_details > a > p {
+    font-size: 18px;
+    color: #FFFFFF;
+}
