@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Brandon Grotesque Medium", "Roboto", sans-serif;
 
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 a {
@@ -35,46 +38,98 @@ body {
     background-color: #59152D;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.header > * {
+    margin: 0 18px;
 }
 
 .toolbar {
-    width: 100%;
+    flex: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.logo {
-    margin: 15px 40px 15px 80px;
-}
-
-.logo > * > img {
-    height: 84px;
-    width: auto;
-}
-
-.menu {
-    margin-right: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.menu > img {
+.account {
+    margin-right: 16px;
     height: 48px;
     width: auto;
 }
 
-.bookmarks {
-    padding: 20px 72px;
+.options {
+    margin-left: 16px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.option {
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #852B40;
+    border-radius: 50px;
+    padding: 9px 19px;
+    color: white;
+}
+
+.active {
+    background-color: #FFFFFF !important;
+    color: #852B40 !important;
+}
+
+.search_container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search {
+    padding: 0 15%;
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    height: 40px;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.lens {
+    position: absolute;
+    left: 5%;
+    height: auto;
+    width: 18px;
+}
+
+.clear {
+    position: absolute;
+    left: 95%;
+    height: auto;
+    width: 14px;
+    transform: translate(-100%, 0);
+}
+
+.bookmarks {
+    flex: 2;
+    padding: 20px 18px;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
 }
@@ -86,12 +141,13 @@ body {
     align-items: center;
     background-color: #852B40;
     border-radius: 6px;
-    padding: 11px 19px;
+    padding: 9px 19px;
     color: white;
 }
 
 /* Welcoming Styling */
 .studio {
+    position: relative;
     border-radius: 36px 36px 0 0;
     width: 100%;
     display: flex;
@@ -102,6 +158,41 @@ body {
     background-color: #F7F1D8;
 }
 
+.logo {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translate(25%, -75%);
+}
+
+.logo > * > img {
+    height: 64px;
+    width: auto;
+    opacity: 0.2;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.empty > img {
+    height: 168px;
+    width: auto;
+    opacity: 0.8;
+}
+
+.empty_text {
+    font-size: 24px;
+    color: #73739b;
+    opacity: 0.8;
+}
 
 /* Footer Styling */
 .footer {
@@ -126,7 +217,7 @@ body {
     z-index: 1;
     padding: 40px 40px 0 40px;
     background-color: #852B40;
-    left: 100%;
+    transform: translate(-100%, 0);
     width: 25%;
     height: 100%;
 }
@@ -145,19 +236,19 @@ body {
 
 @keyframes slide_left_out {
     0% {
-        transform: translate(0, 0);
+        transform: translate(-100%, 0);
     }
     100% {
-        transform: translate(-100%, 0);
+        transform: translate(0, 0);
     }
 }
 
 @keyframes slide_left_in {
     0% {
-        transform: translate(-100%, 0);
+        transform: translate(0, 0);
     }
     100% {
-        transform: translate(0, 0);
+        transform: translate(-100%, 0);
     }
 }
 
@@ -196,7 +287,7 @@ body {
     height: auto;
 }
 
-.account_image:hover {
+.account_image:hover, .account:hover {
     transform: scale(1.15);
 }
 
@@ -230,14 +321,14 @@ body {
     margin: 16px 0;
 }
 
+.setting:hover {
+    transform: scale(1.15);
+}
+
 .settings_details > a > img {
     margin-right: 8px;
     width: 20px;
     height: auto;
-}
-
-.settings_details > a > img:hover {
-    transform: scale(1.15);
 }
 
 .settings_details > a > p {

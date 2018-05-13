@@ -1,0 +1,97 @@
+[
+  {
+    "_id": "0",
+    "deadline": "2018-04-14",
+    "creation": "2018-02-28",
+    "title": "Getting healthy food for working sessions.",
+    "desc": "Buy fruits, juice and some candies for times of desperation.",
+    "status": "DONE",
+    "createdBy": "christopher",
+    "people": [
+      "bill",
+      "jane"
+    ]
+  }, {
+    "_id": "1",
+    "deadline": "2018-04-15",
+    "creation": "2018-02-21",
+    "title": "Do the frond-end UX/UI for to-do",
+    "desc": "Design the interface and establish the interface for the web app.",
+    "status": "DONE",
+    "createdBy": "christopher",
+    "people": [
+      "bill"
+    ]
+  }, {
+    "_id": "2",
+    "deadline": "2018-04-14",
+    "creation": "2018-02-20",
+    "title": "Establish the connection between client & server",
+    "desc": "Use JS by programming in functional paradigm.",
+    "status": "DOING",
+    "createdBy": "christopher",
+    "people": [
+      "jane"
+    ]
+  }, {
+    "_id": "3",
+    "deadline": "2018-04-15",
+    "creation": "2018-02-27",
+    "title": "Finish the UI/UX",
+    "desc": "Finish the final assets and use WebGL for heavy animations rendering.",
+    "status": "TODO",
+    "createdBy": "christopher",
+    "people": [
+      "bill"
+    ]
+  }, {
+    "_id": "4",
+    "deadline": "2018-04-14",
+    "creation": "2018-02-26",
+    "title": "Do the back-end for the web app",
+    "desc": "Create a NodeJS back-end server with express.",
+    "status": "TODO",
+    "createdBy": "christopher",
+    "people": [
+      "jane"
+    ]
+  }, {
+    "_id": "5",
+    "deadline": "2018-04-14",
+    "creation": "2018-02-19",
+    "title": "Do the database for the web app",
+    "desc": "Create the database using MongoDB and Mongoose or in just pure PostgreSQL.",
+    "status": "TODO",
+    "createdBy": "jane",
+    "people": [
+      "christopher",
+      "bill"
+    ]
+  }, {
+    "_id": "6",
+    "deadline": "2018-04-15",
+    "creation": "2018-02-18",
+    "title": "Scale the web app",
+    "desc": "Create auth system with passport library.",
+    "status": "TODO",
+    "createdBy": "jane",
+    "people": [
+      "christopher"
+    ]
+  }, {
+    "_id": "7",
+    "deadline": "2018-04-14",
+    "creation": "2018-02-17",
+    "title": "Make it cross-platform",
+    "desc": "Target the Android and iOS market for $$$",
+    "status": "TODO",
+    "createdBy": "bill",
+    "people": [
+      "christopher"
+    ]
+  }
+]
+
+
+
+

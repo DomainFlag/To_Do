@@ -1,0 +1,19 @@
+[
+  {
+    "_id" : "christopher",
+    "avatar" : "2018-03-20-christopher.png",
+    "email" : "christopher@gmail.com",
+    "joinedOn" : "2017-02-18"
+  },
+  {
+    "_id" : "Jane",
+    "avatar" : "photo_perso.png",
+    "email" : "jane@hotmail.com",
+    "joinedOn" : "2017-02-18"
+  },
+  {
+    "_id" : "Bill",
+    "email" : "bill@gmail.com",
+    "joinedOn" : "2016-08-18"
+  }
+]
