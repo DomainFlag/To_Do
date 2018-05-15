@@ -1,8 +1,8 @@
 [
   {
     "_id": "0",
-    "deadline": "2018-04-14",
-    "creation": "2018-02-28",
+    "deadline": "2018-11-11",
+    "creation": "2018-05-10",
     "title": "Getting healthy food for working sessions.",
     "desc": "Buy fruits, juice and some candies for times of desperation.",
     "status": "DONE",
@@ -13,7 +13,7 @@
     ]
   }, {
     "_id": "1",
-    "deadline": "2018-04-15",
+    "deadline": "2019-09-01",
     "creation": "2018-02-21",
     "title": "Do the frond-end UX/UI for to-do",
     "desc": "Design the interface and establish the interface for the web app.",
@@ -24,7 +24,7 @@
     ]
   }, {
     "_id": "2",
-    "deadline": "2018-04-14",
+    "deadline": "2018-08-12",
     "creation": "2018-02-20",
     "title": "Establish the connection between client & server",
     "desc": "Use JS by programming in functional paradigm.",
@@ -35,8 +35,8 @@
     ]
   }, {
     "_id": "3",
-    "deadline": "2018-04-15",
-    "creation": "2018-02-27",
+    "deadline": "2018-05-15",
+    "creation": "2018-05-12",
     "title": "Finish the UI/UX",
     "desc": "Finish the final assets and use WebGL for heavy animations rendering.",
     "status": "TODO",
@@ -59,8 +59,8 @@
     "_id": "5",
     "deadline": "2018-04-14",
     "creation": "2018-02-19",
-    "title": "Do the database for the web app",
-    "desc": "Create the database using MongoDB and Mongoose or in just pure PostgreSQL.",
+    "title": "Make the DB for the web app",
+    "desc": "Create the database using MongoDB and Mongoose or in just pure PostgreSQL.Create the database using MongoDB and Mongoose or in just pure PostgreSQL.Create the database using MongoDB and Mongoose or in just pure PostgreSQL.Create the database using MongoDB and Mongoose or in just pure PostgreSQL.Create the database using MongoDB and Mongoose or in just pure PostgreSQL.Create the database using MongoDB and Mongoose or in just pure PostgreSQL.",
     "status": "TODO",
     "createdBy": "jane",
     "people": [
@@ -80,10 +80,10 @@
     ]
   }, {
     "_id": "7",
-    "deadline": "2018-04-14",
+    "deadline": "2018-05-21",
     "creation": "2018-02-17",
     "title": "Make it cross-platform",
-    "desc": "Target the Android and iOS market for $$$",
+    "desc": "Target the Android and iOS market and fish for $$$",
     "status": "TODO",
     "createdBy": "bill",
     "people": [
@@ -91,7 +91,3 @@
     ]
   }
 ]
-
-
-
-

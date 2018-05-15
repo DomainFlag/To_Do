@@ -27,28 +27,149 @@
 <section class="room">
     <div class="header">
         <div class="toolbar">
-            <img class="account" src="../public/assets/icons/account.svg">
-            <div class="options">
-                <div class="option active">Private</div>
-                <div class="option">Shared</div>
+            <div class="toolbar_set">
+                <img class="account" src="../public/assets/icons/account.svg">
+                <div class="options">
+                    <div class="option active">Private</div>
+                    <div class="option">Shared</div>
+                </div>
             </div>
         </div>
         <div class="search_container">
-            <input class="search" type="text" placeholder="Search">
+            <input class="search" type="text" placeholder="Search todo(Not yet implemented)">
             <img class="lens" src="./../public/assets/icons/lens.svg"/>
             <img class="clear" src="./../public/assets/icons/cancel_black.svg"/>
         </div>
         <div class="bookmarks">
-            <div class="bookmark active">Cooking</div>
-            <div class="bookmark">Courses</div>
-            <div class="bookmark">Sport</div>
-            <div class="bookmark">Sport</div>
+            <div class="bookmark todo_action">
+                Create Todo
+            </div>
+            <select class="bookmark todo_filter">
+                <option value="nothing">No Filter</option>
+                <option value="date">Date Filter</option>
+                <option value="title">Title Filter</option>
+                <option value="done">Done Filter</option>
+                <option value="doing">Doing Filter</option>
+                <option value="todo">Todo Filter</option>
+            </select>
         </div>
     </div>
     <div class="studio">
+        <div class="workspace"></div>
+
+        <div class="task">
+            <div class="task_container">
+                <div class="task_header">
+                    <p class="task_title"></p>
+                </div>
+                <div class="task_container">
+                    <p class="task_description"></p>
+                </div>
+                <div class="task_timetable">
+                    <div class="timetable">
+                        <img src="./../public/assets/icons/clock_gray.svg"/>
+                        <p class="creation"></p>
+                    </div>
+                    <div class="timetable">
+                        <img src="./../public/assets/icons/clock_accent.svg"/>
+                        <p class="deadline"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="task_progressbar"></div>
+            <div class="task_overlay">
+                <p>Edit</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="form_header">
+                <p id="form_mode">Edit Mode</p>
+            </div>
+            <div class="form_details">
+
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Title">
+
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Description"></textarea>
+
+                <div class="form_dates">
+                    <div class="form_date">
+                        <label for="creation">Creation</label>
+                        <div class="form_date_container">
+                            <img class="creation_calendar" src="./../public/assets/icons/calendar_closed.svg"/>
+                            <p id="creation">yyyy-mm-dd</p>
+                        </div>
+                    </div>
+
+                    <div class="form_date">
+                        <label for="deadline">Deadline</label>
+                        <div class="form_date_container">
+                            <img class="deadline_calendar" src="./../public/assets/icons/calendar.svg"/>
+                            <p id="deadline">yyyy-mm-dd</p>
+                        </div>
+
+                        <div class="calendar">
+                            <div class="calendar_my">
+                                <img class="calendar_back" src="./../public/assets/icons/left-arrow.svg">
+                                <p class="calendar_header">May 2018</p>
+                                <img class="calendar_next" src="./../public/assets/icons/right-arrow.svg">
+                            </div>
+                            <div class="calendar_d">
+                                <div class="calendar_df">
+                                    <p class="day_f">S</p>
+                                    <p class="day_f">M</p>
+                                    <p class="day_f">T</p>
+                                    <p class="day_f">W</p>
+                                    <p class="day_f">T</p>
+                                    <p class="day_f">F</p>
+                                    <p class="day_f">S</p>
+                                </div>
+                                <div class="calendar_dn"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_options">
+                    <div class="form_option">
+                        <label for="status">Status</label>
+                        <select id="status" >
+                            <option>TODO</option>
+                            <option>DOING</option>
+                            <option>DONE</option>
+                        </select>
+                    </div>
+
+                    <div class="form_option_divider"></div>
+
+                    <div class="form_option">
+                        <label for="people">People</label>
+                        <div class="form_add">
+                            <select id="people"></select>
+                            <img class="add_person" src="./../public/assets/icons/add.svg"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="people"></div>
+
+            </div>
+            <div class="form_action">
+                <div class="actions">
+                    <button class="delete">Delete</button>
+                </div>
+                <div class="actions ">
+                    <button class="update">Update</button>
+                    <button class="create">Create</button>
+                </div>
+            </div>
+            <img class="form_close" src="../public/assets/icons/cancel.svg">
+        </div>
         <div class="logo">
             <a href="#Home">
-                <img src="./../public/assets/logo.png">
+                <img src="./../public/assets/logo_circular.png">
             </a>
         </div>
         <div class="empty">
@@ -64,7 +185,8 @@
     <div class="settings_header">
         <div class="settings_account">
             <img class="account_image" src="../public/assets/icons/account.svg"/>
-            <p class="account_name">Cristian Chivriga</p>
+            <input class="account_name" type="text">
+            <input class="account_email" type="text">
         </div>
         <img class="settings_back" src="../public/assets/icons/cancel.svg">
     </div>

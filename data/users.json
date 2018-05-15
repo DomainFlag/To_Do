@@ -6,13 +6,13 @@
     "joinedOn" : "2017-02-18"
   },
   {
-    "_id" : "Jane",
+    "_id" : "jane",
     "avatar" : "photo_perso.png",
     "email" : "jane@hotmail.com",
     "joinedOn" : "2017-02-18"
   },
   {
-    "_id" : "Bill",
+    "_id" : "bill",
     "email" : "bill@gmail.com",
     "joinedOn" : "2016-08-18"
   }
